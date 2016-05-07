@@ -6,3 +6,6 @@ type Person struct {
 	Age       int
 }
 
+func (p Person) Fullname() string {
+	return p.FirstName + " " + p.LastName
+}
